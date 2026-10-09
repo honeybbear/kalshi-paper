@@ -1,0 +1,159 @@
+/* kalshi-paper — mobile-first dark instrument panel */
+:root {
+  --bg: #0a0e14;
+  --card: #141a26;
+  --card2: #1a2233;
+  --line: #263049;
+  --text: #e8edf5;
+  --dim: #8b96ad;
+  --blue: #2f81f7;
+  --coinbase: #0052ff;
+  --green: #26a69a;
+  --red: #ef5350;
+  --amber: #f5a623;
+  --radius: 14px;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--bg); color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+  font-size: 15px; line-height: 1.45;
+  padding-bottom: 76px; /* room for bottom tab bar */
+}
+/* always-visible fake-money banner */
+.fakebar {
+  position: sticky; top: 0; z-index: 60;
+  background: #3a2b00; color: #ffd97a;
+  border-bottom: 1px solid #6b5210;
+  text-align: center; font-size: 12px; font-weight: 700;
+  letter-spacing: .08em; padding: 7px 8px;
+}
+.wrap { max-width: 520px; margin: 0 auto; padding: 0 14px; }
+header.top { padding: 14px 0 6px; }
+header.top h1 { font-size: 21px; margin: 0; letter-spacing: .02em; }
+header.top h1 .paper { color: var(--amber); }
+header.top .sub { color: var(--dim); font-size: 12.5px; margin-top: 2px; }
+.fresh { font-size: 11.5px; color: var(--dim); margin: 6px 0 10px; }
+.fresh b { color: var(--text); }
+.tabpage { display: none; }
+.tabpage.active { display: block; }
+/* coin cards */
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); padding: 13px 14px; margin: 10px 0;
+}
+.card .row1 { display: flex; align-items: center; justify-content: space-between; }
+.coinbadge {
+  width: 34px; height: 34px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 13px; color: #fff; margin-right: 9px;
+  flex: 0 0 auto;
+}
+.coinname { font-weight: 700; font-size: 16px; }
+.coinleft { display: flex; align-items: center; }
+.countdown {
+  font-variant-numeric: tabular-nums; font-weight: 700; font-size: 14px;
+  background: var(--card2); border: 1px solid var(--line);
+  padding: 5px 10px; border-radius: 999px;
+}
+.countdown.hot { color: #ffb3ab; border-color: var(--red); }
+.target { color: var(--dim); font-size: 13px; margin: 8px 0 10px; }
+.target b { color: var(--text); font-size: 15px; font-variant-numeric: tabular-nums; }
+.sides { display: flex; gap: 10px; }
+.sidebtn {
+  flex: 1; border: 1px solid var(--line); border-radius: 12px;
+  background: var(--card2); color: var(--text);
+  padding: 10px 8px; font-size: 14px; font-weight: 700; cursor: pointer;
+}
+.sidebtn small { display: block; font-weight: 400; color: var(--dim); font-size: 11px; margin-top: 2px;}
+.sidebtn.over { border-color: #1d5c56; }
+.sidebtn.over .p { color: var(--green); font-size: 17px; }
+.sidebtn.under { border-color: #6e2b2b; }
+.sidebtn.under .p { color: var(--red); font-size: 17px; }
+.sidebtn:disabled { opacity: .35; cursor: default; }
+/* dislocation meter */
+.meter { margin-top: 11px; }
+.meter .mlabel { font-size: 11.5px; color: var(--dim); margin-bottom: 5px; }
+.meterbar { position: relative; height: 8px; background: #0d1320; border-radius: 99px; border: 1px solid var(--line); }
+.meterbar .zero { position: absolute; left: 50%; top: -2px; bottom: -2px; width: 1px; background: #3a4763; }
+.meterbar .dot {
+  position: absolute; top: 50%; width: 12px; height: 12px; border-radius: 50%;
+  background: var(--blue); transform: translate(-50%, -50%);
+  border: 2px solid #0a0e14;
+}
+.meternums { display: flex; justify-content: space-between; font-size: 11px; color: var(--dim); margin-top: 4px; font-variant-numeric: tabular-nums; }
+.meterwarn { font-size: 11px; color: #c9a227; margin-top: 5px; }
+.unavail { color: var(--dim); font-size: 13px; padding: 6px 0 2px; }
+/* modal trade sheet */
+.sheet-bg { position: fixed; inset: 0; background: rgba(0,0,0,.6); z-index: 80; display: none; }
+.sheet-bg.open { display: block; }
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 81;
+  background: var(--card); border-top: 1px solid var(--line);
+  border-radius: 18px 18px 0 0; padding: 16px 18px 26px;
+  transform: translateY(105%); transition: transform .22s ease;
+  max-width: 520px; margin: 0 auto;
+}
+.sheet-bg.open + .sheet, .sheet.open { transform: translateY(0); }
+.sheet h3 { margin: 0 0 4px; font-size: 17px; }
+.sheet .tkr { color: var(--dim); font-size: 12px; margin-bottom: 12px; }
+.qtyrow { display: flex; gap: 8px; margin: 10px 0 14px; }
+.qtyrow button {
+  flex: 1; padding: 10px 0; border-radius: 10px; border: 1px solid var(--line);
+  background: var(--card2); color: var(--text); font-weight: 700; font-size: 15px;
+}
+.qtyrow button.sel { border-color: var(--blue); background: #12305e; }
+.traderow { display: flex; justify-content: space-between; font-size: 13.5px; padding: 4px 0; color: var(--dim); }
+.traderow b { color: var(--text); font-variant-numeric: tabular-nums; }
+.confirm {
+  width: 100%; margin-top: 14px; padding: 14px; border: 0; border-radius: 12px;
+  background: var(--coinbase); color: #fff; font-size: 16px; font-weight: 800;
+}
+.confirm:disabled { opacity: .4; }
+.cancel { width: 100%; margin-top: 8px; padding: 10px; background: none; border: 0; color: var(--dim); font-size: 14px; }
+.blocknote { color: #ffb3ab; font-size: 12.5px; margin-top: 8px; }
+/* portfolio */
+.statgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+.stat { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 11px 13px; }
+.stat .k { font-size: 11px; color: var(--dim); text-transform: uppercase; letter-spacing: .06em; }
+.stat .v { font-size: 19px; font-weight: 800; font-variant-numeric: tabular-nums; margin-top: 2px; }
+.pos, .hist { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 10px 12px; margin: 8px 0; font-size: 13.5px; }
+.pos .ph, .hist .ph { display: flex; justify-content: space-between; font-weight: 700; }
+.pos .pd, .hist .pd { color: var(--dim); font-size: 12.5px; margin-top: 3px; font-variant-numeric: tabular-nums; }
+.win { color: var(--green); font-weight: 700; }
+.loss { color: var(--red); font-weight: 700; }
+.resetbtn { background: none; border: 1px solid var(--line); color: var(--dim); border-radius: 10px; padding: 9px 14px; font-size: 13px; margin: 14px 0; }
+table.pct { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 6px; }
+table.pct td, table.pct th { padding: 6px 4px; border-bottom: 1px solid var(--line); text-align: right; font-variant-numeric: tabular-nums; }
+table.pct td:first-child, table.pct th:first-child { text-align: left; }
+table.pct th { color: var(--dim); font-weight: 400; font-size: 11px; text-transform: uppercase; }
+/* detector */
+.flagcard { background: var(--card); border: 1px solid #4a3a10; border-radius: var(--radius); padding: 12px 14px; margin: 10px 0; }
+.flagcard .ft { font-weight: 800; font-size: 14px; }
+.flagcard .fo { font-size: 13px; color: var(--dim); margin-top: 5px; }
+.flagcard .fm { font-size: 12px; color: var(--dim); margin-top: 6px; font-variant-numeric: tabular-nums; }
+.detectnote { background: #241d08; border: 1px solid #4a3a10; color: #ffd97a; border-radius: 12px; padding: 11px 13px; font-size: 12.5px; margin: 10px 0; }
+.empty { color: var(--dim); text-align: center; padding: 26px 10px; font-size: 13.5px; }
+/* truth panel */
+.truth { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px; margin: 10px 0; }
+.truth h3 { margin: 0 0 8px; font-size: 15px; }
+.truth p, .truth li { font-size: 13.5px; color: #c6cfdf; }
+.truth ul { padding-left: 18px; margin: 8px 0; }
+.truth .bignum { font-size: 22px; font-weight: 800; color: var(--red); }
+.truth .failtag { display: inline-block; background: #3d1414; color: #ff9d97; font-weight: 800; font-size: 11px; padding: 3px 9px; border-radius: 99px; margin-left: 6px; }
+/* bottom tab bar */
+.tabbar {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 70;
+  background: rgba(13, 18, 28, .97); border-top: 1px solid var(--line);
+  display: flex; max-width: 520px; margin: 0 auto;
+}
+.tabbar button {
+  flex: 1; background: none; border: 0; color: var(--dim);
+  padding: 10px 0 12px; font-size: 11px; font-weight: 600;
+}
+.tabbar button .ico { font-size: 19px; display: block; margin-bottom: 2px; }
+.tabbar button.sel { color: var(--blue); }
+h2.sec { font-size: 16px; margin: 16px 0 4px; }
+.muted { color: var(--dim); font-size: 12.5px; }
+a { color: var(--blue); }

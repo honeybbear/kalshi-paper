@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kalshi Paper — 15-min crypto simulator (FAKE MONEY)</title>
+<meta name="description" content="Honest instrument panel + paper-trading simulator for Kalshi 15-minute crypto prediction markets. Fake money only. Research found no edge.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="fakebar">⚠ FAKE MONEY SIMULATOR — NO REAL TRADES, NO REAL MONEY ⚠</div>
+
+<div class="wrap">
+  <header class="top">
+    <h1>📊 Kalshi <span class="paper">Paper</span></h1>
+    <div class="sub">15-min crypto prediction markets · instrument panel + simulator</div>
+    <div class="fresh" id="fresh">loading market data…</div>
+  </header>
+
+  <!-- BOARD -->
+  <section class="tabpage active" id="tab-board">
+    <div class="muted" style="margin-bottom:2px">Live 15-min windows from Kalshi's public API. Tap <b>Over</b>/<b>Under</b> to place a <b>paper</b> trade at the shown ask.</div>
+    <div id="board"></div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="tabpage" id="tab-portfolio">
+    <h2 class="sec">Paper portfolio <span class="muted">(fake money)</span></h2>
+    <div class="statgrid">
+      <div class="stat"><div class="k">Bankroll</div><div class="v" id="st-bank">$1,000.00</div></div>
+      <div class="stat"><div class="k">Equity (mark-to-mid)</div><div class="v" id="st-equity">$1,000.00</div></div>
+      <div class="stat"><div class="k">Realized P&amp;L</div><div class="v" id="st-pnl">$0.00</div></div>
+      <div class="stat"><div class="k">Win rate</div><div class="v" id="st-win">—</div></div>
+      <div class="stat"><div class="k">ROI</div><div class="v" id="st-roi">—</div></div>
+      <div class="stat"><div class="k">Trades settled</div><div class="v" id="st-n">0</div></div>
+    </div>
+    <h2 class="sec">Open positions</h2>
+    <div id="positions"><div class="empty">No open paper positions.</div></div>
+    <h2 class="sec">Per-coin realized P&amp;L</h2>
+    <div id="percoin"><div class="empty">Nothing settled yet.</div></div>
+    <h2 class="sec">Trade history</h2>
+    <div id="history"><div class="empty">No paper trades yet. Tap Over/Under on the board.</div></div>
+    <button class="resetbtn" id="resetbtn">Reset simulator to $1,000 fake</button>
+  </section>
+
+  <!-- DETECTOR -->
+  <section class="tabpage" id="tab-detector">
+    <h2 class="sec">Dislocation detector</h2>
+    <div class="detectnote">🔎 <b>Detection only — not recommendations.</b> Flags describe what the scanner observed. The model behind them was tested on 270 real trades and <b>lost money</b> (−$1.44, t = −0.21). Flags are not an edge.</div>
+    <div class="fresh" id="flagfresh"></div>
+    <div id="flags"></div>
+  </section>
+
+  <!-- TRUTH -->
+  <section class="tabpage" id="tab-truth">
+    <h2 class="sec">The honest verdict</h2>
+    <div class="truth">
+      <h3>We tested this game. It has no edge. <span class="failtag">NO-EDGE</span></h3>
+      <p>On 2026-10-07 we ran pre-registered signal tests on <b>946 real settled 15-min windows</b> across 9 tokens. Tests were run once, frozen, no tweaks:</p>
+      <ul>
+        <li><b>Fair-value model</b> (this page's model): 270 trades, <b>−$1.44</b>, t = <b>−0.21</b> <span class="failtag">FAIL</span></li>
+        <li><b>5-min momentum</b>: 127 trades, <b>−$2.28</b>, t = <b>−0.53</b> <span class="failtag">FAIL</span></li>
+      </ul>
+      <p>The market is brutally well calibrated (a 50¢ contract wins ~56% of the time; 90¢ wins ~93%). Base rate is ~47.7% YES — a coin flip with a vig. The taker fee (up to ~4% on 50¢ contracts, ~10% on 10¢ contracts) grinds any small edge to dust.</p>
+      <p>This site is an <b>instrument panel + paper simulator</b>: real prices, fake money, ruthless scorekeeping. If you think you see something, prove it here across 100+ paper trades before a single real dollar is ever involved.</p>
+      <p class="muted">Full research: <span class="muted">kalshi-15min/reports/</span> · Settlement: 60-sec avg of CF Benchmarks RTI at close ≥ open ⇒ YES (ties go YES).</p>
+    </div>
+  </section>
+</div>
+
+<!-- trade sheet -->
+<div class="sheet-bg" id="sheetbg"></div>
+<div class="sheet" id="sheet">
+  <h3 id="sh-title">Paper trade</h3>
+  <div class="tkr" id="sh-tkr"></div>
+  <div class="muted" style="font-size:12.5px">Contracts (1¢ tick, Kalshi taker fee applies)</div>
+  <div class="qtyrow" id="sh-qty">
+    <button data-q="1">1</button><button data-q="5" class="sel">5</button><button data-q="10">10</button><button data-q="25">25</button>
+  </div>
+  <div class="traderow"><span>Price per contract</span><b id="sh-price">—</b></div>
+  <div class="traderow"><span>Taker fee (total)</span><b id="sh-fee">—</b></div>
+  <div class="traderow"><span>Total cost</span><b id="sh-cost">—</b></div>
+  <div class="traderow"><span>Max win / max loss</span><b id="sh-mm">—</b></div>
+  <div class="blocknote" id="sh-block" style="display:none"></div>
+  <button class="confirm" id="sh-confirm">Place paper trade (fake)</button>
+  <button class="cancel" id="sh-cancel">Cancel</button>
+</div>
+
+<nav class="tabbar">
+  <button data-tab="board" class="sel"><span class="ico">📡</span>Board</button>
+  <button data-tab="portfolio"><span class="ico">💼</span>Portfolio</button>
+  <button data-tab="detector"><span class="ico">🔎</span>Detector</button>
+  <button data-tab="truth"><span class="ico">⚖️</span>Truth</button>
+</nav>
+
+<script src="app.js"></script>
+</body>
+</html>

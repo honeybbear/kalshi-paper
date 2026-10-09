@@ -1,0 +1,38 @@
+name: refresh market data
+
+# Polls Kalshi's public API every 5 minutes, refreshes the static data feed
+# (data/live.json) and runs the dislocation detector (data/flags.json).
+# Public endpoints only, no auth. Commits JSON back to main for GitHub Pages.
+
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-market-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Refresh live board data
+        run: python3 scripts/refresh.py --out data/live.json
+      - name: Run dislocation detector
+        run: python3 scripts/dislocation_check.py --write data/flags.json
+      - name: Commit data updates
+        run: |
+          git config user.name "kalshi-paper-bot"
+          git config user.email "kalshi-paper-bot@users.noreply.github.com"
+          git add data/live.json data/flags.json
+          git diff --cached --quiet || git commit -m "data: refresh market feed $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
