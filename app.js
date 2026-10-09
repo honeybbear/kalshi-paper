@@ -11,7 +11,7 @@
     NEAR: '#00ec97', HYPE: '#97fdd3'
   };
 
-  var live = null, flags = null;
+  var live = null, flags = null, scoreboard = null;
   var paper = loadPaper();
   var sheetState = null;
 
@@ -76,6 +76,15 @@
       renderDetector();
     }).catch(function () {
       flags = null; renderDetector();
+    });
+    fetch('data/scoreboard.json', { cache: 'no-store' }).then(function (r) {
+      if (!r.ok) throw new Error('no scoreboard yet');
+      return r.json();
+    }).then(function (d) {
+      scoreboard = d;
+      renderScoreboard();
+    }).catch(function () {
+      scoreboard = null; renderScoreboard();
     });
   }
 
@@ -357,6 +366,50 @@
         '<div class="fo">' + esc(f.observation || '') + '</div>' +
         '<div class="fm">mid ' + f.market_mid_cents + '¢ · model ' + f.model_fair_cents + '¢ · ' +
         f.seconds_remaining + 's left · ' + esc(timeAgo(f.observed_at_utc)) + '<br>' + esc(f.ticker) + '</div></div>';
+    }).join('');
+  }
+
+  /* ---------- scoreboard ---------- */
+  function renderScoreboard() {
+    var el = document.getElementById('sb-recent');
+    var ff = document.getElementById('sb-fresh');
+    if (!scoreboard) {
+      ff.textContent = '';
+      el.innerHTML = '<div class="empty">No scoreboard data yet — the scorer runs every ~5 minutes.</div>';
+      document.getElementById('sb-picks').textContent = '—';
+      document.getElementById('sb-settled').textContent = '—';
+      document.getElementById('sb-wins').textContent = '—';
+      document.getElementById('sb-winrate').textContent = '—';
+      document.getElementById('sb-pnl').textContent = '—';
+      return;
+    }
+    ff.textContent = 'Updated ' + timeAgo(scoreboard.updated_at) + ' · demonstration only, no money involved';
+    document.getElementById('sb-picks').textContent = scoreboard.n_picks;
+    document.getElementById('sb-settled').textContent = scoreboard.n_settled;
+    document.getElementById('sb-wins').textContent = scoreboard.wins;
+    document.getElementById('sb-winrate').textContent =
+      scoreboard.win_rate != null ? (scoreboard.win_rate * 100).toFixed(1) + '%' : '—';
+    var pnlEl = document.getElementById('sb-pnl');
+    var pnlD = scoreboard.pnl_cents / 100;
+    pnlEl.textContent = (pnlD >= 0 ? '+' : '') + fmt$(pnlD);
+    pnlEl.style.color = pnlD >= 0 ? 'var(--green)' : 'var(--red)';
+
+    var recent = scoreboard.recent || [];
+    if (!recent.length) {
+      el.innerHTML = '<div class="empty">No leans logged yet.</div>';
+      return;
+    }
+    el.innerHTML = recent.map(function (r) {
+      var leanTxt = r.lean === 'over' ? '▲ model favored Over' :
+        r.lean === 'under' ? '▼ model favored Under' : '— no lean (within costs)';
+      var outTxt, cls;
+      if (r.outcome === 'win') { outTxt = 'WON +' + (r.pnl_cents / 100).toFixed(2); cls = 'win'; }
+      else if (r.outcome === 'loss') { outTxt = 'LOST ' + (r.pnl_cents / 100).toFixed(2); cls = 'loss'; }
+      else { outTxt = 'pending'; cls = ''; }
+      return '<div class="hist"><div class="ph"><span>' + esc(r.coin) + ' · ' + leanTxt + '</span>' +
+        '<span class="' + cls + '">' + esc(outTxt) + '</span></div>' +
+        '<div class="pd">model ' + (r.model_p * 100).toFixed(1) + '¢ · market mid ' + r.market_mid_cents +
+        '¢ · logged ' + esc(timeAgo(r.recorded_at)) + '<br>' + esc(r.ticker) + '</div></div>';
     }).join('');
   }
 

@@ -51,6 +51,22 @@
     <div id="flags"></div>
   </section>
 
+  <!-- SCOREBOARD -->
+  <section class="tabpage" id="tab-scoreboard">
+    <h2 class="sec">Model scoreboard <span class="failtag">DEMO</span></h2>
+    <div class="detectnote">📋 <b>Demonstration, not a signal.</b> This board logs what the fair-value model "thought" about each 15-min window and grades it after settlement. <b>No money is involved anywhere.</b> Small samples are noise — the real grade is the 946-window backtest: <b>−$1.44 over 270 trades (t = −0.21)</b>. Watch, don't follow.</div>
+    <div class="fresh" id="sb-fresh"></div>
+    <div class="statgrid">
+      <div class="stat"><div class="k">Model leans logged</div><div class="v" id="sb-picks">—</div></div>
+      <div class="stat"><div class="k">Settled</div><div class="v" id="sb-settled">—</div></div>
+      <div class="stat"><div class="k">Wins</div><div class="v" id="sb-wins">—</div></div>
+      <div class="stat"><div class="k">Win rate</div><div class="v" id="sb-winrate">—</div></div>
+      <div class="stat"><div class="k">Simulated P&amp;L (1 contract each, after fees)</div><div class="v" id="sb-pnl">—</div></div>
+    </div>
+    <h2 class="sec">Last 20 logged leans</h2>
+    <div id="sb-recent"><div class="empty">No leans logged yet — the scorer runs every ~5 minutes.</div></div>
+  </section>
+
   <!-- TRUTH -->
   <section class="tabpage" id="tab-truth">
     <h2 class="sec">The honest verdict</h2>
@@ -90,6 +106,7 @@
   <button data-tab="board" class="sel"><span class="ico">📡</span>Board</button>
   <button data-tab="portfolio"><span class="ico">💼</span>Portfolio</button>
   <button data-tab="detector"><span class="ico">🔎</span>Detector</button>
+  <button data-tab="scoreboard"><span class="ico">📋</span>Scoreboard</button>
   <button data-tab="truth"><span class="ico">⚖️</span>Truth</button>
 </nav>
 

@@ -29,10 +29,12 @@ jobs:
         run: python3 scripts/refresh.py --out data/live.json
       - name: Run dislocation detector
         run: python3 scripts/dislocation_check.py --write data/flags.json
+      - name: Update model scoreboard
+        run: python3 scripts/scoreboard.py
       - name: Commit data updates
         run: |
           git config user.name "kalshi-paper-bot"
           git config user.email "kalshi-paper-bot@users.noreply.github.com"
-          git add data/live.json data/flags.json
+          git add data/live.json data/flags.json data/scoreboard.json data/scoreboard.jsonl
           git diff --cached --quiet || git commit -m "data: refresh market feed $(date -u +%Y-%m-%dT%H:%MZ)"
           git push
