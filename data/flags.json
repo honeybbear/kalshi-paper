@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-09T23:10:24Z",
+  "generated_at_utc": "2026-10-10T02:19:31Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,40 +32,5 @@
       "open_windows": 1
     }
   },
-  "flags": [
-    {
-      "ticker": "KXBNB15M-26OCT091915-15",
-      "series": "KXBNB15M",
-      "coin": "BNB",
-      "observed_at_utc": "2026-10-09T23:10:24Z",
-      "seconds_remaining": 275,
-      "target_price": 741.98,
-      "spot_ref": 741.96,
-      "market_mid_cents": 28.5,
-      "model_fair_cents": 49.3,
-      "type": "fast_price_move",
-      "move_cents": 37.5,
-      "trailing_sigma_cents": 9.43,
-      "threshold_cents": 18.86,
-      "sigmas": 3.98,
-      "observation": "Contract mid moved 37.5c within ~60 seconds vs a trailing 1-min sigma of 9.43c. Detection only."
-    },
-    {
-      "ticker": "KXZEC15M-26OCT091915-15",
-      "series": "KXZEC15M",
-      "coin": "ZEC",
-      "observed_at_utc": "2026-10-09T23:10:24Z",
-      "seconds_remaining": 275,
-      "target_price": 1211.198,
-      "spot_ref": 1210.1,
-      "market_mid_cents": 32.0,
-      "model_fair_cents": 36.1,
-      "type": "fast_price_move",
-      "move_cents": 13.5,
-      "trailing_sigma_cents": 5.57,
-      "threshold_cents": 11.14,
-      "sigmas": 2.42,
-      "observation": "Contract mid moved 13.5c within ~60 seconds vs a trailing 1-min sigma of 5.57c. Detection only."
-    }
-  ]
+  "flags": []
 }
