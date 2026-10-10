@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-10T08:39:48Z",
+  "generated_at_utc": "2026-10-10T14:44:36Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,5 +32,51 @@
       "open_windows": 1
     }
   },
-  "flags": []
+  "flags": [
+    {
+      "ticker": "KXXRP15M-26OCT101045-45",
+      "series": "KXXRP15M",
+      "coin": "XRP",
+      "observed_at_utc": "2026-10-10T14:44:36Z",
+      "seconds_remaining": 24,
+      "target_price": 1.4077,
+      "spot_ref": 1.4084,
+      "market_mid_cents": 99.7,
+      "model_fair_cents": 80.9,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 18.8,
+      "observation": "Market mid differs from model by 18.8c in the final 3 minutes. Detection only."
+    },
+    {
+      "ticker": "KXBNB15M-26OCT101045-45",
+      "series": "KXBNB15M",
+      "coin": "BNB",
+      "observed_at_utc": "2026-10-10T14:44:36Z",
+      "seconds_remaining": 24,
+      "target_price": 752.05,
+      "spot_ref": 752.35,
+      "market_mid_cents": 100.0,
+      "model_fair_cents": 81.8,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 18.1,
+      "observation": "Market mid differs from model by 18.1c in the final 3 minutes. Detection only."
+    },
+    {
+      "ticker": "KXNEAR15M-26OCT101045-45",
+      "series": "KXNEAR15M",
+      "coin": "NEAR",
+      "observed_at_utc": "2026-10-10T14:44:36Z",
+      "seconds_remaining": 24,
+      "target_price": 5.4095,
+      "spot_ref": 5.4084,
+      "market_mid_cents": 99.2,
+      "model_fair_cents": null,
+      "type": "fast_price_move",
+      "move_cents": 29.65,
+      "trailing_sigma_cents": 9.6,
+      "threshold_cents": 19.19,
+      "sigmas": 3.09,
+      "observation": "Contract mid moved 29.65c within ~60 seconds vs a trailing 1-min sigma of 9.6c. Detection only."
+    }
+  ]
 }
