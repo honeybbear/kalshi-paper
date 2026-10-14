@@ -1,21 +1,91 @@
 {
-  "updated_at": "2026-10-14T12:26:09Z",
+  "updated_at": "2026-10-14T17:27:42Z",
   "fee_edge_cents": 4,
   "note": "DEMONSTRATION, not a signal. No money is involved. Small samples are noise. The 946-window backtest is the real grade: the fair-value model lost -$1.44 over 270 trades (t=-0.21). This board exists so you can watch the model, not to find an edge.",
   "n_picks": 103,
-  "n_settled": 99,
-  "wins": 19,
-  "win_rate": 0.1919,
-  "pnl_cents": -712.1,
+  "n_settled": 103,
+  "wins": 21,
+  "win_rate": 0.2039,
+  "pnl_cents": -534.4,
   "recent": [
+    {
+      "coin": "ZEC",
+      "ticker": "KXZEC15M-26OCT141330-30",
+      "lean": "no_lean",
+      "model_p": 0.0005,
+      "market_mid_cents": 0.5,
+      "outcome": null,
+      "pnl_cents": null,
+      "recorded_at": "2026-10-14T17:27:42Z"
+    },
+    {
+      "coin": "BNB",
+      "ticker": "KXBNB15M-26OCT141330-30",
+      "lean": "no_lean",
+      "model_p": 0.0555,
+      "market_mid_cents": 1.9,
+      "outcome": null,
+      "pnl_cents": null,
+      "recorded_at": "2026-10-14T17:27:42Z"
+    },
+    {
+      "coin": "DOGE",
+      "ticker": "KXDOGE15M-26OCT141330-30",
+      "lean": "no_lean",
+      "model_p": 0.0697,
+      "market_mid_cents": 5.0,
+      "outcome": null,
+      "pnl_cents": null,
+      "recorded_at": "2026-10-14T17:27:42Z"
+    },
+    {
+      "coin": "XRP",
+      "ticker": "KXXRP15M-26OCT141330-30",
+      "lean": "no_lean",
+      "model_p": 0.1142,
+      "market_mid_cents": 9.8,
+      "outcome": null,
+      "pnl_cents": null,
+      "recorded_at": "2026-10-14T17:27:42Z"
+    },
+    {
+      "coin": "SOL",
+      "ticker": "KXSOL15M-26OCT141330-30",
+      "lean": "no_lean",
+      "model_p": 0.0025,
+      "market_mid_cents": 1.4,
+      "outcome": null,
+      "pnl_cents": null,
+      "recorded_at": "2026-10-14T17:27:42Z"
+    },
+    {
+      "coin": "ETH",
+      "ticker": "KXETH15M-26OCT141330-30",
+      "lean": "no_lean",
+      "model_p": 0.0001,
+      "market_mid_cents": 0.4,
+      "outcome": null,
+      "pnl_cents": null,
+      "recorded_at": "2026-10-14T17:27:42Z"
+    },
+    {
+      "coin": "BTC",
+      "ticker": "KXBTC15M-26OCT141330-30",
+      "lean": "no_lean",
+      "model_p": 0.0161,
+      "market_mid_cents": 3.1,
+      "outcome": null,
+      "pnl_cents": null,
+      "recorded_at": "2026-10-14T17:27:42Z"
+    },
     {
       "coin": "ZEC",
       "ticker": "KXZEC15M-26OCT140830-30",
       "lean": "over",
       "model_p": 0.1067,
       "market_mid_cents": 2.6,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "loss",
+      "pnl_cents": -4.0,
       "recorded_at": "2026-10-14T12:26:09Z"
     },
     {
@@ -24,8 +94,8 @@
       "lean": "over",
       "model_p": 0.0871,
       "market_mid_cents": 0.4,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "loss",
+      "pnl_cents": -1.4,
       "recorded_at": "2026-10-14T12:26:09Z"
     },
     {
@@ -34,7 +104,7 @@
       "lean": "no_lean",
       "model_p": 0.025,
       "market_mid_cents": 0.9,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-14T12:26:09Z"
     },
@@ -44,8 +114,8 @@
       "lean": "over",
       "model_p": 0.283,
       "market_mid_cents": 11.5,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "win",
+      "pnl_cents": 87.0,
       "recorded_at": "2026-10-14T12:26:09Z"
     },
     {
@@ -54,7 +124,7 @@
       "lean": "no_lean",
       "model_p": 0.0092,
       "market_mid_cents": 0.8,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-14T12:26:09Z"
     },
@@ -64,7 +134,7 @@
       "lean": "no_lean",
       "model_p": 0.0343,
       "market_mid_cents": 0.7,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-14T12:26:09Z"
     },
@@ -74,8 +144,8 @@
       "lean": "over",
       "model_p": 0.1096,
       "market_mid_cents": 2.9,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "win",
+      "pnl_cents": 96.1,
       "recorded_at": "2026-10-14T12:26:09Z"
     },
     {
@@ -137,76 +207,6 @@
       "outcome": "loss",
       "pnl_cents": -1.7,
       "recorded_at": "2026-10-14T06:44:04Z"
-    },
-    {
-      "coin": "BTC",
-      "ticker": "KXBTC15M-26OCT140245-45",
-      "lean": "over",
-      "model_p": 0.5627,
-      "market_mid_cents": 44.5,
-      "outcome": "loss",
-      "pnl_cents": -47.0,
-      "recorded_at": "2026-10-14T06:44:04Z"
-    },
-    {
-      "coin": "ZEC",
-      "ticker": "KXZEC15M-26OCT132145-45",
-      "lean": "no_lean",
-      "model_p": 1.0,
-      "market_mid_cents": 99.8,
-      "outcome": "na",
-      "pnl_cents": null,
-      "recorded_at": "2026-10-14T01:43:11Z"
-    },
-    {
-      "coin": "BNB",
-      "ticker": "KXBNB15M-26OCT132145-45",
-      "lean": "no_lean",
-      "model_p": 0.1749,
-      "market_mid_cents": 13.5,
-      "outcome": "na",
-      "pnl_cents": null,
-      "recorded_at": "2026-10-14T01:43:11Z"
-    },
-    {
-      "coin": "DOGE",
-      "ticker": "KXDOGE15M-26OCT132145-45",
-      "lean": "under",
-      "model_p": 0.5713,
-      "market_mid_cents": 70.5,
-      "outcome": "loss",
-      "pnl_cents": -33.0,
-      "recorded_at": "2026-10-14T01:43:11Z"
-    },
-    {
-      "coin": "XRP",
-      "ticker": "KXXRP15M-26OCT132145-45",
-      "lean": "over",
-      "model_p": 0.1832,
-      "market_mid_cents": 5.4,
-      "outcome": "loss",
-      "pnl_cents": -6.8,
-      "recorded_at": "2026-10-14T01:43:11Z"
-    },
-    {
-      "coin": "SOL",
-      "ticker": "KXSOL15M-26OCT132145-45",
-      "lean": "over",
-      "model_p": 0.0619,
-      "market_mid_cents": 1.8,
-      "outcome": "loss",
-      "pnl_cents": -3.0,
-      "recorded_at": "2026-10-14T01:43:11Z"
-    },
-    {
-      "coin": "ETH",
-      "ticker": "KXETH15M-26OCT132145-45",
-      "lean": "over",
-      "model_p": 0.477,
-      "market_mid_cents": 30.0,
-      "outcome": "win",
-      "pnl_cents": 67.0,
-      "recorded_at": "2026-10-14T01:43:11Z"
     }
   ]
 }
