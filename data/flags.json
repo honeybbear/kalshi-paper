@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-16T14:55:21Z",
+  "generated_at_utc": "2026-10-16T18:35:57Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,5 +32,23 @@
       "open_windows": 1
     }
   },
-  "flags": []
+  "flags": [
+    {
+      "ticker": "KXZEC15M-26OCT161445-45",
+      "series": "KXZEC15M",
+      "coin": "ZEC",
+      "observed_at_utc": "2026-10-16T18:35:57Z",
+      "seconds_remaining": 543,
+      "target_price": 1150.3977,
+      "spot_ref": 1148.28,
+      "market_mid_cents": 41.5,
+      "model_fair_cents": 30.3,
+      "type": "fast_price_move",
+      "move_cents": 7.5,
+      "trailing_sigma_cents": 1.22,
+      "threshold_cents": 2.45,
+      "sigmas": 6.12,
+      "observation": "Contract mid moved 7.5c within ~60 seconds vs a trailing 1-min sigma of 1.22c. Detection only."
+    }
+  ]
 }
