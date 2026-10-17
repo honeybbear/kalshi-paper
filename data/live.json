@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-17T06:58:18Z",
+  "generated_at_utc": "2026-10-17T11:30:01Z",
   "refresh_cadence": "GitHub Actions every 5 minutes; countdowns tick client-side",
   "caveat": "Prices can be up to ~5 minutes stale. Paper trades execute at the displayed ask; real markets move. FAKE MONEY ONLY.",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
@@ -8,200 +8,200 @@
     {
       "coin": "BTC",
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170300-00",
+      "ticker": "KXBTC15M-26OCT170730-30",
       "available": true,
-      "target_price": 81501.91,
-      "yes_bid_cents": 55.0,
-      "yes_ask_cents": 56.0,
-      "no_bid_cents": 44.0,
-      "no_ask_cents": 45.0,
-      "last_cents": 56.0,
-      "mid_cents": 55.5,
-      "volume": "1684670.01",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 81500.04,
-      "model_fair_cents": 48.5,
+      "target_price": 81528.26,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.1,
+      "no_bid_cents": 99.9,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.1,
+      "mid_cents": 0.1,
+      "volume": "1410259.05",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 81445.19,
+      "model_fair_cents": null,
       "model_sigma_15m": 0.0018,
-      "dislocation_cents": 7.0,
-      "taker_fee_at_ask_cents": 2.0,
-      "taker_fee_at_noask_cents": 2.0
+      "dislocation_cents": null,
+      "taker_fee_at_ask_cents": 1.0,
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "ETH",
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170300-00",
+      "ticker": "KXETH15M-26OCT170730-30",
       "available": true,
-      "target_price": 2429.25,
-      "yes_bid_cents": 69.0,
-      "yes_ask_cents": 70.0,
-      "no_bid_cents": 30.0,
-      "no_ask_cents": 31.0,
-      "last_cents": 70.0,
-      "mid_cents": 69.5,
-      "volume": "169751.17",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 2429.41,
-      "model_fair_cents": 53.5,
+      "target_price": 2435.48,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.1,
+      "no_bid_cents": 99.9,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.1,
+      "mid_cents": 0.1,
+      "volume": "169203.85",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 2431.25,
+      "model_fair_cents": null,
       "model_sigma_15m": 0.0022,
-      "dislocation_cents": 16.0,
-      "taker_fee_at_ask_cents": 2.0,
-      "taker_fee_at_noask_cents": 2.0
+      "dislocation_cents": null,
+      "taker_fee_at_ask_cents": 1.0,
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "SOL",
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170300-00",
+      "ticker": "KXSOL15M-26OCT170730-30",
       "available": true,
-      "target_price": 104.768,
-      "yes_bid_cents": 92.8,
-      "yes_ask_cents": 92.9,
-      "no_bid_cents": 7.1,
-      "no_ask_cents": 7.2,
-      "last_cents": 92.8,
-      "mid_cents": 92.9,
-      "volume": "113785.69",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 104.81,
-      "model_fair_cents": 66.5,
+      "target_price": 104.7163,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.1,
+      "no_bid_cents": 99.9,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.1,
+      "mid_cents": 0.1,
+      "volume": "114134.99",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 104.5,
+      "model_fair_cents": null,
       "model_sigma_15m": 0.0028,
-      "dislocation_cents": 26.4,
+      "dislocation_cents": null,
       "taker_fee_at_ask_cents": 1.0,
-      "taker_fee_at_noask_cents": 1.0
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "XRP",
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170300-00",
+      "ticker": "KXXRP15M-26OCT170730-30",
       "available": true,
-      "target_price": 1.3078,
-      "yes_bid_cents": 93.2,
-      "yes_ask_cents": 94.4,
-      "no_bid_cents": 5.6,
-      "no_ask_cents": 6.8,
-      "last_cents": 94.2,
-      "mid_cents": 93.8,
-      "volume": "94105.20",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 1.3082,
-      "model_fair_cents": 60.3,
+      "target_price": 1.3067,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.1,
+      "no_bid_cents": 99.9,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.1,
+      "mid_cents": 0.1,
+      "volume": "88147.48",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 1.3054,
+      "model_fair_cents": null,
       "model_sigma_15m": 0.0035,
-      "dislocation_cents": 33.5,
+      "dislocation_cents": null,
       "taker_fee_at_ask_cents": 1.0,
-      "taker_fee_at_noask_cents": 1.0
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "DOGE",
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170300-00",
+      "ticker": "KXDOGE15M-26OCT170730-30",
       "available": true,
-      "target_price": 0.080516,
-      "yes_bid_cents": 15.0,
-      "yes_ask_cents": 19.0,
-      "no_bid_cents": 81.0,
-      "no_ask_cents": 85.0,
-      "last_cents": 20.0,
-      "mid_cents": 17.0,
-      "volume": "42870.13",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 0.08048,
-      "model_fair_cents": 36.3,
+      "target_price": 0.080359,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.2,
+      "no_bid_cents": 99.8,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.2,
+      "mid_cents": 0.1,
+      "volume": "48958.71",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 0.08027,
+      "model_fair_cents": null,
       "model_sigma_15m": 0.0038,
-      "dislocation_cents": -19.3,
-      "taker_fee_at_ask_cents": 2.0,
-      "taker_fee_at_noask_cents": 1.0
+      "dislocation_cents": null,
+      "taker_fee_at_ask_cents": 1.0,
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "BNB",
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170300-00",
+      "ticker": "KXBNB15M-26OCT170730-30",
       "available": true,
-      "target_price": 721.21,
-      "yes_bid_cents": 98.8,
-      "yes_ask_cents": 98.9,
-      "no_bid_cents": 1.1,
-      "no_ask_cents": 1.2,
-      "last_cents": 98.9,
-      "mid_cents": 98.8,
-      "volume": "12932.11",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 721.35,
-      "model_fair_cents": 58.5,
+      "target_price": 720.98,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.1,
+      "no_bid_cents": 99.9,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.1,
+      "mid_cents": 0.1,
+      "volume": "17221.77",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 720.06,
+      "model_fair_cents": null,
       "model_sigma_15m": 0.0027,
-      "dislocation_cents": 40.4,
+      "dislocation_cents": null,
       "taker_fee_at_ask_cents": 1.0,
-      "taker_fee_at_noask_cents": 1.0
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "ZEC",
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170300-00",
+      "ticker": "KXZEC15M-26OCT170730-30",
       "available": true,
-      "target_price": 1162.8819,
-      "yes_bid_cents": 1.0,
-      "yes_ask_cents": 2.4,
-      "no_bid_cents": 97.6,
-      "no_ask_cents": 99.0,
-      "last_cents": 2.5,
-      "mid_cents": 1.7,
-      "volume": "14981.36",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 1160.68,
-      "model_fair_cents": 11.0,
+      "target_price": 1177.4787,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.1,
+      "no_bid_cents": 99.9,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.1,
+      "mid_cents": 0.1,
+      "volume": "16575.68",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 1171.08,
+      "model_fair_cents": null,
       "model_sigma_15m": 0.0046,
-      "dislocation_cents": -9.3,
+      "dislocation_cents": null,
       "taker_fee_at_ask_cents": 1.0,
-      "taker_fee_at_noask_cents": 1.0
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "NEAR",
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170300-00",
+      "ticker": "KXNEAR15M-26OCT170730-30",
       "available": true,
-      "target_price": 5.0658,
-      "yes_bid_cents": 1.0,
-      "yes_ask_cents": 1.5,
-      "no_bid_cents": 98.5,
-      "no_ask_cents": 99.0,
-      "last_cents": 1.5,
-      "mid_cents": 1.2,
-      "volume": "20540.04",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 5.0518,
+      "target_price": 5.1724,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.1,
+      "no_bid_cents": 99.9,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.1,
+      "mid_cents": 0.1,
+      "volume": "16985.72",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 5.1426,
       "model_fair_cents": null,
       "model_sigma_15m": null,
       "dislocation_cents": null,
       "taker_fee_at_ask_cents": 1.0,
-      "taker_fee_at_noask_cents": 1.0
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "HYPE",
       "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170300-00",
+      "ticker": "KXHYPE15M-26OCT170730-30",
       "available": true,
-      "target_price": 79.8324,
-      "yes_bid_cents": 87.0,
-      "yes_ask_cents": 90.0,
-      "no_bid_cents": 10.0,
-      "no_ask_cents": 13.0,
-      "last_cents": 87.0,
-      "mid_cents": 88.5,
-      "volume": "37809.19",
-      "open_time_utc": "2026-10-17T06:45:00Z",
-      "close_time_utc": "2026-10-17T07:00:00Z",
-      "spot_ref": 79.9,
+      "target_price": 79.623,
+      "yes_bid_cents": 0.0,
+      "yes_ask_cents": 0.1,
+      "no_bid_cents": 99.9,
+      "no_ask_cents": 100.0,
+      "last_cents": 0.1,
+      "mid_cents": 0.1,
+      "volume": "35896.16",
+      "open_time_utc": "2026-10-17T11:15:00Z",
+      "close_time_utc": "2026-10-17T11:30:00Z",
+      "spot_ref": 79.23,
       "model_fair_cents": null,
       "model_sigma_15m": null,
       "dislocation_cents": null,
       "taker_fee_at_ask_cents": 1.0,
-      "taker_fee_at_noask_cents": 1.0
+      "taker_fee_at_noask_cents": 0.0
     },
     {
       "coin": "SHIB",
@@ -213,651 +213,651 @@
   "settled": [
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170245-45",
+      "ticker": "KXBTC15M-26OCT170715-15",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "close_time_utc": "2026-10-17T11:15:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170230-30",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "ticker": "KXBTC15M-26OCT170700-00",
+      "result": "no",
+      "close_time_utc": "2026-10-17T11:00:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170215-15",
+      "ticker": "KXBTC15M-26OCT170645-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:15:00Z"
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170200-00",
-      "result": "no",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "ticker": "KXBTC15M-26OCT170630-30",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170145-45",
+      "ticker": "KXBTC15M-26OCT170615-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170130-30",
+      "ticker": "KXBTC15M-26OCT170600-00",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "close_time_utc": "2026-10-17T10:00:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170115-15",
+      "ticker": "KXBTC15M-26OCT170545-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170100-00",
+      "ticker": "KXBTC15M-26OCT170530-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170045-45",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "ticker": "KXBTC15M-26OCT170515-15",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:15:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170030-30",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:30:00Z"
+      "ticker": "KXBTC15M-26OCT170500-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170015-15",
+      "ticker": "KXBTC15M-26OCT170445-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:15:00Z"
+      "close_time_utc": "2026-10-17T08:45:00Z"
     },
     {
       "series": "KXBTC15M",
-      "ticker": "KXBTC15M-26OCT170000-00",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
+      "ticker": "KXBTC15M-26OCT170430-30",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T08:30:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170245-45",
+      "ticker": "KXETH15M-26OCT170715-15",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "close_time_utc": "2026-10-17T11:15:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170230-30",
+      "ticker": "KXETH15M-26OCT170700-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "close_time_utc": "2026-10-17T11:00:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170215-15",
+      "ticker": "KXETH15M-26OCT170645-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:15:00Z"
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170200-00",
+      "ticker": "KXETH15M-26OCT170630-30",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170145-45",
+      "ticker": "KXETH15M-26OCT170615-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170130-30",
+      "ticker": "KXETH15M-26OCT170600-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "close_time_utc": "2026-10-17T10:00:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170115-15",
+      "ticker": "KXETH15M-26OCT170545-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170100-00",
+      "ticker": "KXETH15M-26OCT170530-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170045-45",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "ticker": "KXETH15M-26OCT170515-15",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:15:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170030-30",
+      "ticker": "KXETH15M-26OCT170500-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T04:30:00Z"
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170015-15",
+      "ticker": "KXETH15M-26OCT170445-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:15:00Z"
+      "close_time_utc": "2026-10-17T08:45:00Z"
     },
     {
       "series": "KXETH15M",
-      "ticker": "KXETH15M-26OCT170000-00",
+      "ticker": "KXETH15M-26OCT170430-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
+      "close_time_utc": "2026-10-17T08:30:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170245-45",
+      "ticker": "KXSOL15M-26OCT170730-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "close_time_utc": "2026-10-17T11:30:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170230-30",
+      "ticker": "KXSOL15M-26OCT170715-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "close_time_utc": "2026-10-17T11:15:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170215-15",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T06:15:00Z"
+      "ticker": "KXSOL15M-26OCT170700-00",
+      "result": "no",
+      "close_time_utc": "2026-10-17T11:00:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170200-00",
+      "ticker": "KXSOL15M-26OCT170645-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170145-45",
-      "result": "no",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "ticker": "KXSOL15M-26OCT170630-30",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170130-30",
+      "ticker": "KXSOL15M-26OCT170615-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170115-15",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "ticker": "KXSOL15M-26OCT170600-00",
+      "result": "no",
+      "close_time_utc": "2026-10-17T10:00:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170100-00",
+      "ticker": "KXSOL15M-26OCT170545-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170045-45",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "ticker": "KXSOL15M-26OCT170530-30",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170030-30",
+      "ticker": "KXSOL15M-26OCT170515-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:30:00Z"
+      "close_time_utc": "2026-10-17T09:15:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170015-15",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:15:00Z"
+      "ticker": "KXSOL15M-26OCT170500-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
       "series": "KXSOL15M",
-      "ticker": "KXSOL15M-26OCT170000-00",
+      "ticker": "KXSOL15M-26OCT170445-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
+      "close_time_utc": "2026-10-17T08:45:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170245-45",
+      "ticker": "KXXRP15M-26OCT170715-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "close_time_utc": "2026-10-17T11:15:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170230-30",
-      "result": "no",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "ticker": "KXXRP15M-26OCT170700-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T11:00:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170215-15",
+      "ticker": "KXXRP15M-26OCT170645-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:15:00Z"
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170200-00",
+      "ticker": "KXXRP15M-26OCT170630-30",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170145-45",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "ticker": "KXXRP15M-26OCT170615-15",
+      "result": "no",
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170130-30",
-      "result": "no",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "ticker": "KXXRP15M-26OCT170600-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:00:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170115-15",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "ticker": "KXXRP15M-26OCT170545-45",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170100-00",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "ticker": "KXXRP15M-26OCT170530-30",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170045-45",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "ticker": "KXXRP15M-26OCT170515-15",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:15:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170030-30",
+      "ticker": "KXXRP15M-26OCT170500-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T04:30:00Z"
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170015-15",
+      "ticker": "KXXRP15M-26OCT170445-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:15:00Z"
+      "close_time_utc": "2026-10-17T08:45:00Z"
     },
     {
       "series": "KXXRP15M",
-      "ticker": "KXXRP15M-26OCT170000-00",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
+      "ticker": "KXXRP15M-26OCT170430-30",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T08:30:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170245-45",
+      "ticker": "KXDOGE15M-26OCT170715-15",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "close_time_utc": "2026-10-17T11:15:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170230-30",
-      "result": "no",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "ticker": "KXDOGE15M-26OCT170700-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T11:00:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170215-15",
+      "ticker": "KXDOGE15M-26OCT170645-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:15:00Z"
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170200-00",
+      "ticker": "KXDOGE15M-26OCT170630-30",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170145-45",
+      "ticker": "KXDOGE15M-26OCT170615-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170130-30",
-      "result": "no",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "ticker": "KXDOGE15M-26OCT170600-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:00:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170115-15",
+      "ticker": "KXDOGE15M-26OCT170545-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170100-00",
+      "ticker": "KXDOGE15M-26OCT170530-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170045-45",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "ticker": "KXDOGE15M-26OCT170515-15",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:15:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170030-30",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:30:00Z"
+      "ticker": "KXDOGE15M-26OCT170500-00",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170015-15",
+      "ticker": "KXDOGE15M-26OCT170445-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:15:00Z"
+      "close_time_utc": "2026-10-17T08:45:00Z"
     },
     {
       "series": "KXDOGE15M",
-      "ticker": "KXDOGE15M-26OCT170000-00",
+      "ticker": "KXDOGE15M-26OCT170430-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
+      "close_time_utc": "2026-10-17T08:30:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170245-45",
+      "ticker": "KXBNB15M-26OCT170715-15",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "close_time_utc": "2026-10-17T11:15:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170230-30",
+      "ticker": "KXBNB15M-26OCT170700-00",
       "result": "no",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "close_time_utc": "2026-10-17T11:00:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170215-15",
-      "result": "no",
-      "close_time_utc": "2026-10-17T06:15:00Z"
+      "ticker": "KXBNB15M-26OCT170645-45",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170200-00",
+      "ticker": "KXBNB15M-26OCT170630-30",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170145-45",
+      "ticker": "KXBNB15M-26OCT170615-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170130-30",
-      "result": "no",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "ticker": "KXBNB15M-26OCT170600-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:00:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170115-15",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "ticker": "KXBNB15M-26OCT170545-45",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170100-00",
+      "ticker": "KXBNB15M-26OCT170530-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170045-45",
+      "ticker": "KXBNB15M-26OCT170515-15",
       "result": "yes",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "close_time_utc": "2026-10-17T09:15:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170030-30",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:30:00Z"
+      "ticker": "KXBNB15M-26OCT170500-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170015-15",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:15:00Z"
+      "ticker": "KXBNB15M-26OCT170445-45",
+      "result": "no",
+      "close_time_utc": "2026-10-17T08:45:00Z"
     },
     {
       "series": "KXBNB15M",
-      "ticker": "KXBNB15M-26OCT170000-00",
+      "ticker": "KXBNB15M-26OCT170430-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
+      "close_time_utc": "2026-10-17T08:30:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170245-45",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "ticker": "KXZEC15M-26OCT170730-30",
+      "result": "no",
+      "close_time_utc": "2026-10-17T11:30:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170230-30",
+      "ticker": "KXZEC15M-26OCT170715-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "close_time_utc": "2026-10-17T11:15:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170215-15",
+      "ticker": "KXZEC15M-26OCT170700-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:15:00Z"
+      "close_time_utc": "2026-10-17T11:00:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170200-00",
-      "result": "no",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "ticker": "KXZEC15M-26OCT170645-45",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170145-45",
-      "result": "no",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "ticker": "KXZEC15M-26OCT170630-30",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170130-30",
+      "ticker": "KXZEC15M-26OCT170615-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170115-15",
+      "ticker": "KXZEC15M-26OCT170600-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "close_time_utc": "2026-10-17T10:00:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170100-00",
-      "result": "no",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "ticker": "KXZEC15M-26OCT170545-45",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170045-45",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "ticker": "KXZEC15M-26OCT170530-30",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170030-30",
+      "ticker": "KXZEC15M-26OCT170515-15",
       "result": "yes",
-      "close_time_utc": "2026-10-17T04:30:00Z"
+      "close_time_utc": "2026-10-17T09:15:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170015-15",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:15:00Z"
+      "ticker": "KXZEC15M-26OCT170500-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
       "series": "KXZEC15M",
-      "ticker": "KXZEC15M-26OCT170000-00",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
-    },
-    {
-      "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170245-45",
+      "ticker": "KXZEC15M-26OCT170445-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "close_time_utc": "2026-10-17T08:45:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170230-30",
+      "ticker": "KXNEAR15M-26OCT170730-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "close_time_utc": "2026-10-17T11:30:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170215-15",
-      "result": "no",
-      "close_time_utc": "2026-10-17T06:15:00Z"
-    },
-    {
-      "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170200-00",
+      "ticker": "KXNEAR15M-26OCT170715-15",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "close_time_utc": "2026-10-17T11:15:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170145-45",
+      "ticker": "KXNEAR15M-26OCT170700-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "close_time_utc": "2026-10-17T11:00:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170130-30",
+      "ticker": "KXNEAR15M-26OCT170645-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170115-15",
+      "ticker": "KXNEAR15M-26OCT170630-30",
       "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170100-00",
+      "ticker": "KXNEAR15M-26OCT170615-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170045-45",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "ticker": "KXNEAR15M-26OCT170600-00",
+      "result": "yes",
+      "close_time_utc": "2026-10-17T10:00:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170030-30",
+      "ticker": "KXNEAR15M-26OCT170545-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:30:00Z"
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170015-15",
-      "result": "yes",
-      "close_time_utc": "2026-10-17T04:15:00Z"
+      "ticker": "KXNEAR15M-26OCT170530-30",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXNEAR15M",
-      "ticker": "KXNEAR15M-26OCT170000-00",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
-    },
-    {
-      "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170245-45",
+      "ticker": "KXNEAR15M-26OCT170515-15",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:45:00Z"
+      "close_time_utc": "2026-10-17T09:15:00Z"
     },
     {
-      "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170230-30",
+      "series": "KXNEAR15M",
+      "ticker": "KXNEAR15M-26OCT170500-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:30:00Z"
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
-      "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170215-15",
+      "series": "KXNEAR15M",
+      "ticker": "KXNEAR15M-26OCT170445-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:15:00Z"
+      "close_time_utc": "2026-10-17T08:45:00Z"
     },
     {
       "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170200-00",
+      "ticker": "KXHYPE15M-26OCT170730-30",
+      "result": "no",
+      "close_time_utc": "2026-10-17T11:30:00Z"
+    },
+    {
+      "series": "KXHYPE15M",
+      "ticker": "KXHYPE15M-26OCT170715-15",
+      "result": "no",
+      "close_time_utc": "2026-10-17T11:15:00Z"
+    },
+    {
+      "series": "KXHYPE15M",
+      "ticker": "KXHYPE15M-26OCT170700-00",
+      "result": "no",
+      "close_time_utc": "2026-10-17T11:00:00Z"
+    },
+    {
+      "series": "KXHYPE15M",
+      "ticker": "KXHYPE15M-26OCT170645-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T06:00:00Z"
+      "close_time_utc": "2026-10-17T10:45:00Z"
     },
     {
       "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170145-45",
+      "ticker": "KXHYPE15M-26OCT170630-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:45:00Z"
+      "close_time_utc": "2026-10-17T10:30:00Z"
     },
     {
       "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170130-30",
+      "ticker": "KXHYPE15M-26OCT170615-15",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:30:00Z"
+      "close_time_utc": "2026-10-17T10:15:00Z"
     },
     {
       "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170115-15",
+      "ticker": "KXHYPE15M-26OCT170600-00",
+      "result": "no",
+      "close_time_utc": "2026-10-17T10:00:00Z"
+    },
+    {
+      "series": "KXHYPE15M",
+      "ticker": "KXHYPE15M-26OCT170545-45",
       "result": "yes",
-      "close_time_utc": "2026-10-17T05:15:00Z"
+      "close_time_utc": "2026-10-17T09:45:00Z"
     },
     {
       "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170100-00",
+      "ticker": "KXHYPE15M-26OCT170530-30",
       "result": "no",
-      "close_time_utc": "2026-10-17T05:00:00Z"
+      "close_time_utc": "2026-10-17T09:30:00Z"
     },
     {
       "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170045-45",
+      "ticker": "KXHYPE15M-26OCT170515-15",
+      "result": "no",
+      "close_time_utc": "2026-10-17T09:15:00Z"
+    },
+    {
+      "series": "KXHYPE15M",
+      "ticker": "KXHYPE15M-26OCT170500-00",
       "result": "yes",
-      "close_time_utc": "2026-10-17T04:45:00Z"
+      "close_time_utc": "2026-10-17T09:00:00Z"
     },
     {
       "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170030-30",
+      "ticker": "KXHYPE15M-26OCT170445-45",
       "result": "no",
-      "close_time_utc": "2026-10-17T04:30:00Z"
-    },
-    {
-      "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170015-15",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:15:00Z"
-    },
-    {
-      "series": "KXHYPE15M",
-      "ticker": "KXHYPE15M-26OCT170000-00",
-      "result": "no",
-      "close_time_utc": "2026-10-17T04:00:00Z"
+      "close_time_utc": "2026-10-17T08:45:00Z"
     }
   ],
   "errors": {}
