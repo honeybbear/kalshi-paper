@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-18T14:40:50Z",
+  "updated_at": "2026-10-18T17:33:53Z",
   "fee_edge_cents": 4,
   "note": "DEMONSTRATION, not a signal. No money is involved. Small samples are noise. The 946-window backtest is the real grade: the fair-value model lost -$1.44 over 270 trades (t=-0.21). This board exists so you can watch the model, not to find an edge.",
   "n_picks": 212,
@@ -14,7 +14,7 @@
       "lean": "no_lean",
       "model_p": 0.0,
       "market_mid_cents": 0.4,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-18T14:40:50Z"
     },
@@ -24,7 +24,7 @@
       "lean": "no_lean",
       "model_p": 0.002,
       "market_mid_cents": 0.8,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-18T14:40:50Z"
     },
@@ -34,7 +34,7 @@
       "lean": "no_lean",
       "model_p": 0.0148,
       "market_mid_cents": 0.9,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-18T14:40:50Z"
     },
@@ -44,7 +44,7 @@
       "lean": "no_lean",
       "model_p": 0.0135,
       "market_mid_cents": 0.9,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-18T14:40:50Z"
     },
@@ -54,7 +54,7 @@
       "lean": "no_lean",
       "model_p": 0.0041,
       "market_mid_cents": 0.9,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-18T14:40:50Z"
     },
@@ -64,7 +64,7 @@
       "lean": "no_lean",
       "model_p": 0.0,
       "market_mid_cents": 0.8,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-18T14:40:50Z"
     },
@@ -74,7 +74,7 @@
       "lean": "no_lean",
       "model_p": 0.0224,
       "market_mid_cents": 1.2,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-18T14:40:50Z"
     },
