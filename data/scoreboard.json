@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-10-20T20:51:07Z",
+  "updated_at": "2026-10-20T23:30:05Z",
   "fee_edge_cents": 4,
   "note": "DEMONSTRATION, not a signal. No money is involved. Small samples are noise. The 946-window backtest is the real grade: the fair-value model lost -$1.44 over 270 trades (t=-0.21). This board exists so you can watch the model, not to find an edge.",
   "n_picks": 258,
-  "n_settled": 254,
-  "wins": 64,
-  "win_rate": 0.252,
-  "pnl_cents": -1004.8,
+  "n_settled": 258,
+  "wins": 65,
+  "win_rate": 0.2519,
+  "pnl_cents": -1056.8,
   "recent": [
     {
       "coin": "ZEC",
@@ -14,7 +14,7 @@
       "lean": "no_lean",
       "model_p": 0.7338,
       "market_mid_cents": 73.0,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-20T20:51:07Z"
     },
@@ -24,8 +24,8 @@
       "lean": "under",
       "model_p": 0.557,
       "market_mid_cents": 76.0,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "loss",
+      "pnl_cents": -27.0,
       "recorded_at": "2026-10-20T20:51:07Z"
     },
     {
@@ -34,7 +34,7 @@
       "lean": "no_lean",
       "model_p": 0.5631,
       "market_mid_cents": 58.5,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-20T20:51:07Z"
     },
@@ -44,8 +44,8 @@
       "lean": "under",
       "model_p": 0.5554,
       "market_mid_cents": 63.5,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "loss",
+      "pnl_cents": -39.0,
       "recorded_at": "2026-10-20T20:51:07Z"
     },
     {
@@ -54,8 +54,8 @@
       "lean": "under",
       "model_p": 0.6335,
       "market_mid_cents": 71.0,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "loss",
+      "pnl_cents": -32.0,
       "recorded_at": "2026-10-20T20:51:07Z"
     },
     {
@@ -64,7 +64,7 @@
       "lean": "no_lean",
       "model_p": 0.706,
       "market_mid_cents": 70.5,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-10-20T20:51:07Z"
     },
@@ -74,8 +74,8 @@
       "lean": "over",
       "model_p": 0.5759,
       "market_mid_cents": 51.5,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "win",
+      "pnl_cents": 46.0,
       "recorded_at": "2026-10-20T20:51:07Z"
     },
     {
