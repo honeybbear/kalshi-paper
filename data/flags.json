@@ -1,138 +1,36 @@
 {
-  "generated_at_utc": "2026-10-24T13:13:51Z",
+  "generated_at_utc": "2026-10-24T16:37:56Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
   "series_checked": {
     "KXBTC15M": {
-      "open_windows": 1
+      "open_windows": 0
     },
     "KXETH15M": {
-      "open_windows": 1
+      "open_windows": 0
     },
     "KXSOL15M": {
-      "open_windows": 1
+      "open_windows": 0
     },
     "KXXRP15M": {
-      "open_windows": 1
+      "open_windows": 0
     },
     "KXDOGE15M": {
-      "open_windows": 1
+      "open_windows": 0
     },
     "KXBNB15M": {
-      "open_windows": 1
+      "open_windows": 0
     },
     "KXZEC15M": {
-      "open_windows": 1
+      "open_windows": 0
     },
     "KXNEAR15M": {
-      "open_windows": 1
+      "open_windows": 0
     },
     "KXHYPE15M": {
-      "open_windows": 1
+      "open_windows": 0
     }
   },
-  "flags": [
-    {
-      "ticker": "KXBTC15M-26OCT240915-15",
-      "series": "KXBTC15M",
-      "coin": "BTC",
-      "observed_at_utc": "2026-10-24T13:13:51Z",
-      "seconds_remaining": 69,
-      "target_price": 80686.76,
-      "spot_ref": 80668.31,
-      "market_mid_cents": 6.2,
-      "model_fair_cents": 32.3,
-      "type": "final_minutes_dislocation",
-      "dislocation_cents": -26.0,
-      "observation": "Market mid differs from model by -26.0c in the final 3 minutes. Detection only."
-    },
-    {
-      "ticker": "KXETH15M-26OCT240915-15",
-      "series": "KXETH15M",
-      "coin": "ETH",
-      "observed_at_utc": "2026-10-24T13:13:51Z",
-      "seconds_remaining": 69,
-      "target_price": 2366.69,
-      "spot_ref": 2366.52,
-      "market_mid_cents": 33.5,
-      "model_fair_cents": 45.3,
-      "type": "fast_price_move",
-      "move_cents": 29.0,
-      "trailing_sigma_cents": 11.03,
-      "threshold_cents": 22.06,
-      "sigmas": 2.63,
-      "observation": "Contract mid moved 29.0c within ~60 seconds vs a trailing 1-min sigma of 11.03c. Detection only."
-    },
-    {
-      "ticker": "KXSOL15M-26OCT240915-15",
-      "series": "KXSOL15M",
-      "coin": "SOL",
-      "observed_at_utc": "2026-10-24T13:13:51Z",
-      "seconds_remaining": 69,
-      "target_price": 101.4992,
-      "spot_ref": 101.43,
-      "market_mid_cents": 2.9,
-      "model_fair_cents": 18.9,
-      "type": "final_minutes_dislocation",
-      "dislocation_cents": -16.0,
-      "observation": "Market mid differs from model by -16.0c in the final 3 minutes. Detection only."
-    },
-    {
-      "ticker": "KXXRP15M-26OCT240915-15",
-      "series": "KXXRP15M",
-      "coin": "XRP",
-      "observed_at_utc": "2026-10-24T13:13:51Z",
-      "seconds_remaining": 69,
-      "target_price": 1.2837,
-      "spot_ref": 1.2832,
-      "market_mid_cents": 54.5,
-      "model_fair_cents": 34.4,
-      "type": "final_minutes_dislocation",
-      "dislocation_cents": 20.1,
-      "observation": "Market mid differs from model by 20.1c in the final 3 minutes. Detection only."
-    },
-    {
-      "ticker": "KXDOGE15M-26OCT240915-15",
-      "series": "KXDOGE15M",
-      "coin": "DOGE",
-      "observed_at_utc": "2026-10-24T13:13:51Z",
-      "seconds_remaining": 69,
-      "target_price": 0.077526,
-      "spot_ref": 0.0776,
-      "market_mid_cents": 99.8,
-      "model_fair_cents": 81.8,
-      "type": "final_minutes_dislocation",
-      "dislocation_cents": 17.9,
-      "observation": "Market mid differs from model by 17.9c in the final 3 minutes. Detection only."
-    },
-    {
-      "ticker": "KXBNB15M-26OCT240915-15",
-      "series": "KXBNB15M",
-      "coin": "BNB",
-      "observed_at_utc": "2026-10-24T13:13:51Z",
-      "seconds_remaining": 69,
-      "target_price": 731.57,
-      "spot_ref": 731.3,
-      "market_mid_cents": 10.6,
-      "model_fair_cents": 31.0,
-      "type": "final_minutes_dislocation",
-      "dislocation_cents": -20.5,
-      "observation": "Market mid differs from model by -20.5c in the final 3 minutes. Detection only."
-    },
-    {
-      "ticker": "KXZEC15M-26OCT240915-15",
-      "series": "KXZEC15M",
-      "coin": "ZEC",
-      "observed_at_utc": "2026-10-24T13:13:51Z",
-      "seconds_remaining": 69,
-      "target_price": 1159.913,
-      "spot_ref": 1159.67,
-      "market_mid_cents": 64.5,
-      "model_fair_cents": 43.5,
-      "type": "final_minutes_dislocation",
-      "dislocation_cents": 21.0,
-      "observation": "Market mid differs from model by 21.0c in the final 3 minutes. Detection only."
-    }
-  ]
+  "flags": []
 }
