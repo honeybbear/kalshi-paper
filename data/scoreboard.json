@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-24T16:38:01Z",
+  "updated_at": "2026-10-24T18:59:26Z",
   "fee_edge_cents": 4,
   "note": "DEMONSTRATION, not a signal. No money is involved. Small samples are noise. The 946-window backtest is the real grade: the fair-value model lost -$1.44 over 270 trades (t=-0.21). This board exists so you can watch the model, not to find an edge.",
   "n_picks": 349,
