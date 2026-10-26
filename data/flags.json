@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-26T01:34:26Z",
+  "generated_at_utc": "2026-10-26T06:54:27Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,5 +32,23 @@
       "open_windows": 1
     }
   },
-  "flags": []
+  "flags": [
+    {
+      "ticker": "KXHYPE15M-26OCT260300-00",
+      "series": "KXHYPE15M",
+      "coin": "HYPE",
+      "observed_at_utc": "2026-10-26T06:54:27Z",
+      "seconds_remaining": 332,
+      "target_price": 76.3919,
+      "spot_ref": 76.41,
+      "market_mid_cents": 60.5,
+      "model_fair_cents": null,
+      "type": "fast_price_move",
+      "move_cents": 9.0,
+      "trailing_sigma_cents": 3.11,
+      "threshold_cents": 6.23,
+      "sigmas": 2.89,
+      "observation": "Contract mid moved 9.0c within ~60 seconds vs a trailing 1-min sigma of 3.11c. Detection only."
+    }
+  ]
 }
