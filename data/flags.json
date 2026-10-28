@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-28T20:07:17Z",
+  "generated_at_utc": "2026-10-28T23:59:23Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,5 +32,48 @@
       "open_windows": 1
     }
   },
-  "flags": []
+  "flags": [
+    {
+      "ticker": "KXETH15M-26OCT282000-00",
+      "series": "KXETH15M",
+      "coin": "ETH",
+      "observed_at_utc": "2026-10-28T23:59:23Z",
+      "seconds_remaining": 36,
+      "target_price": 2356.6,
+      "spot_ref": 2357.34,
+      "market_mid_cents": 99.6,
+      "model_fair_cents": 76.1,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 23.5,
+      "observation": "Market mid differs from model by 23.5c in the final 3 minutes. Detection only."
+    },
+    {
+      "ticker": "KXSOL15M-26OCT282000-00",
+      "series": "KXSOL15M",
+      "coin": "SOL",
+      "observed_at_utc": "2026-10-28T23:59:23Z",
+      "seconds_remaining": 36,
+      "target_price": 102.3083,
+      "spot_ref": 102.32,
+      "market_mid_cents": 99.8,
+      "model_fair_cents": 58.0,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 41.8,
+      "observation": "Market mid differs from model by 41.8c in the final 3 minutes. Detection only."
+    },
+    {
+      "ticker": "KXXRP15M-26OCT282000-00",
+      "series": "KXXRP15M",
+      "coin": "XRP",
+      "observed_at_utc": "2026-10-28T23:59:23Z",
+      "seconds_remaining": 36,
+      "target_price": 1.3247,
+      "spot_ref": 1.3244,
+      "market_mid_cents": 96.7,
+      "model_fair_cents": 37.4,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 59.3,
+      "observation": "Market mid differs from model by 59.3c in the final 3 minutes. Detection only."
+    }
+  ]
 }
