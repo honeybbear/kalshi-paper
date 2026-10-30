@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-10-30T19:38:53Z",
+  "generated_at_utc": "2026-10-30T23:13:59Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -34,55 +34,18 @@
   },
   "flags": [
     {
-      "ticker": "KXSOL15M-26OCT301545-45",
+      "ticker": "KXSOL15M-26OCT301915-15",
       "series": "KXSOL15M",
       "coin": "SOL",
-      "observed_at_utc": "2026-10-30T19:38:53Z",
-      "seconds_remaining": 366,
-      "target_price": 94.2958,
-      "spot_ref": 94.18,
-      "market_mid_cents": 23.5,
-      "model_fair_cents": 24.6,
-      "type": "fast_price_move",
-      "move_cents": 21.0,
-      "trailing_sigma_cents": 5.27,
-      "threshold_cents": 10.55,
-      "sigmas": 3.98,
-      "observation": "Contract mid moved 21.0c within ~60 seconds vs a trailing 1-min sigma of 5.27c. Detection only."
-    },
-    {
-      "ticker": "KXDOGE15M-26OCT301545-45",
-      "series": "KXDOGE15M",
-      "coin": "DOGE",
-      "observed_at_utc": "2026-10-30T19:38:53Z",
-      "seconds_remaining": 366,
-      "target_price": 0.074781,
-      "spot_ref": 0.07469,
-      "market_mid_cents": 27.5,
-      "model_fair_cents": 30.8,
-      "type": "fast_price_move",
-      "move_cents": 14.0,
-      "trailing_sigma_cents": 5.98,
-      "threshold_cents": 11.95,
-      "sigmas": 2.34,
-      "observation": "Contract mid moved 14.0c within ~60 seconds vs a trailing 1-min sigma of 5.98c. Detection only."
-    },
-    {
-      "ticker": "KXNEAR15M-26OCT301545-45",
-      "series": "KXNEAR15M",
-      "coin": "NEAR",
-      "observed_at_utc": "2026-10-30T19:38:53Z",
-      "seconds_remaining": 366,
-      "target_price": 4.2929,
-      "spot_ref": 4.2763,
-      "market_mid_cents": 9.9,
-      "model_fair_cents": null,
-      "type": "fast_price_move",
-      "move_cents": 28.1,
-      "trailing_sigma_cents": 7.49,
-      "threshold_cents": 14.98,
-      "sigmas": 3.75,
-      "observation": "Contract mid moved 28.1c within ~60 seconds vs a trailing 1-min sigma of 7.49c. Detection only."
+      "observed_at_utc": "2026-10-30T23:13:59Z",
+      "seconds_remaining": 61,
+      "target_price": 95.7223,
+      "spot_ref": 95.75,
+      "market_mid_cents": 98.8,
+      "model_fair_cents": 65.5,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 33.3,
+      "observation": "Market mid differs from model by 33.3c in the final 3 minutes. Detection only."
     }
   ]
 }
