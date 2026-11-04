@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-03T21:17:38Z",
+  "generated_at_utc": "2026-11-04T01:28:34Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,5 +32,20 @@
       "open_windows": 1
     }
   },
-  "flags": []
+  "flags": [
+    {
+      "ticker": "KXDOGE15M-26NOV032030-30",
+      "series": "KXDOGE15M",
+      "coin": "DOGE",
+      "observed_at_utc": "2026-11-04T01:28:34Z",
+      "seconds_remaining": 86,
+      "target_price": 0.073996,
+      "spot_ref": 0.07406,
+      "market_mid_cents": 95.4,
+      "model_fair_cents": 77.0,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 18.5,
+      "observation": "Market mid differs from model by 18.5c in the final 3 minutes. Detection only."
+    }
+  ]
 }
