@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-05T16:47:11Z",
+  "generated_at_utc": "2026-11-05T22:23:47Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,5 +32,40 @@
       "open_windows": 1
     }
   },
-  "flags": []
+  "flags": [
+    {
+      "ticker": "KXBTC15M-26NOV051730-30",
+      "series": "KXBTC15M",
+      "coin": "BTC",
+      "observed_at_utc": "2026-11-05T22:23:47Z",
+      "seconds_remaining": 372,
+      "target_price": 75965.76,
+      "spot_ref": 75880.04,
+      "market_mid_cents": 26.5,
+      "model_fair_cents": 16.5,
+      "type": "fast_price_move",
+      "move_cents": 16.0,
+      "trailing_sigma_cents": 6.37,
+      "threshold_cents": 12.75,
+      "sigmas": 2.51,
+      "observation": "Contract mid moved 16.0c within ~60 seconds vs a trailing 1-min sigma of 6.37c. Detection only."
+    },
+    {
+      "ticker": "KXSOL15M-26NOV051730-30",
+      "series": "KXSOL15M",
+      "coin": "SOL",
+      "observed_at_utc": "2026-11-05T22:23:47Z",
+      "seconds_remaining": 372,
+      "target_price": 90.0115,
+      "spot_ref": 89.8,
+      "market_mid_cents": 9.8,
+      "model_fair_cents": 9.6,
+      "type": "fast_price_move",
+      "move_cents": 18.2,
+      "trailing_sigma_cents": 7.89,
+      "threshold_cents": 15.79,
+      "sigmas": 2.31,
+      "observation": "Contract mid moved 18.2c within ~60 seconds vs a trailing 1-min sigma of 7.89c. Detection only."
+    }
+  ]
 }
