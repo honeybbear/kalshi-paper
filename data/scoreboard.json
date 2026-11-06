@@ -1,21 +1,31 @@
 {
-  "updated_at": "2026-11-06T17:01:03Z",
+  "updated_at": "2026-11-06T22:00:15Z",
   "fee_edge_cents": 4,
   "note": "DEMONSTRATION, not a signal. No money is involved. Small samples are noise. The 946-window backtest is the real grade: the fair-value model lost -$1.44 over 270 trades (t=-0.21). This board exists so you can watch the model, not to find an edge.",
-  "n_picks": 608,
-  "n_settled": 603,
-  "wins": 183,
-  "win_rate": 0.3035,
-  "pnl_cents": -1115.3,
+  "n_picks": 609,
+  "n_settled": 608,
+  "wins": 188,
+  "win_rate": 0.3092,
+  "pnl_cents": -890.3,
   "recent": [
+    {
+      "coin": "ZEC",
+      "ticker": "KXZEC15M-26NOV061715-15",
+      "lean": "under",
+      "model_p": 0.4019,
+      "market_mid_cents": 48.5,
+      "outcome": null,
+      "pnl_cents": null,
+      "recorded_at": "2026-11-06T22:00:15Z"
+    },
     {
       "coin": "ZEC",
       "ticker": "KXZEC15M-26NOV061215-15",
       "lean": "under",
       "model_p": 0.4001,
       "market_mid_cents": 53.0,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "win",
+      "pnl_cents": 50.0,
       "recorded_at": "2026-11-06T17:01:03Z"
     },
     {
@@ -24,7 +34,7 @@
       "lean": "no_lean",
       "model_p": 0.3746,
       "market_mid_cents": 41.5,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-11-06T17:01:03Z"
     },
@@ -34,7 +44,7 @@
       "lean": "no_lean",
       "model_p": 0.4318,
       "market_mid_cents": 45.5,
-      "outcome": null,
+      "outcome": "na",
       "pnl_cents": null,
       "recorded_at": "2026-11-06T17:01:03Z"
     },
@@ -44,8 +54,8 @@
       "lean": "under",
       "model_p": 0.3457,
       "market_mid_cents": 44.5,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "win",
+      "pnl_cents": 42.0,
       "recorded_at": "2026-11-06T17:01:03Z"
     },
     {
@@ -54,8 +64,8 @@
       "lean": "under",
       "model_p": 0.3617,
       "market_mid_cents": 45.5,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "win",
+      "pnl_cents": 43.0,
       "recorded_at": "2026-11-06T17:01:03Z"
     },
     {
@@ -64,8 +74,8 @@
       "lean": "under",
       "model_p": 0.3363,
       "market_mid_cents": 44.5,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "win",
+      "pnl_cents": 42.0,
       "recorded_at": "2026-11-06T17:01:03Z"
     },
     {
@@ -74,8 +84,8 @@
       "lean": "under",
       "model_p": 0.4564,
       "market_mid_cents": 50.5,
-      "outcome": null,
-      "pnl_cents": null,
+      "outcome": "win",
+      "pnl_cents": 48.0,
       "recorded_at": "2026-11-06T17:01:03Z"
     },
     {
@@ -196,16 +206,6 @@
       "market_mid_cents": 74.5,
       "outcome": "loss",
       "pnl_cents": -28.0,
-      "recorded_at": "2026-11-06T02:39:31Z"
-    },
-    {
-      "coin": "ETH",
-      "ticker": "KXETH15M-26NOV052145-45",
-      "lean": "over",
-      "model_p": 0.4572,
-      "market_mid_cents": 38.5,
-      "outcome": "loss",
-      "pnl_cents": -41.0,
       "recorded_at": "2026-11-06T02:39:31Z"
     }
   ]
