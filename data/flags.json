@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-15T23:34:45Z",
+  "generated_at_utc": "2026-11-16T03:02:24Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,40 +32,5 @@
       "open_windows": 1
     }
   },
-  "flags": [
-    {
-      "ticker": "KXDOGE15M-26NOV151845-45",
-      "series": "KXDOGE15M",
-      "coin": "DOGE",
-      "observed_at_utc": "2026-11-15T23:34:45Z",
-      "seconds_remaining": 614,
-      "target_price": 0.059588,
-      "spot_ref": 0.05942,
-      "market_mid_cents": 65.0,
-      "model_fair_cents": 18.4,
-      "type": "fast_price_move",
-      "move_cents": 2.5,
-      "trailing_sigma_cents": 1.15,
-      "threshold_cents": 2.31,
-      "sigmas": 2.17,
-      "observation": "Contract mid moved 2.5c within ~60 seconds vs a trailing 1-min sigma of 1.15c. Detection only."
-    },
-    {
-      "ticker": "KXHYPE15M-26NOV151845-45",
-      "series": "KXHYPE15M",
-      "coin": "HYPE",
-      "observed_at_utc": "2026-11-15T23:34:45Z",
-      "seconds_remaining": 614,
-      "target_price": 67.8028,
-      "spot_ref": 67.55,
-      "market_mid_cents": 12.5,
-      "model_fair_cents": null,
-      "type": "fast_price_move",
-      "move_cents": 9.0,
-      "trailing_sigma_cents": 4.37,
-      "threshold_cents": 8.74,
-      "sigmas": 2.06,
-      "observation": "Contract mid moved 9.0c within ~60 seconds vs a trailing 1-min sigma of 4.37c. Detection only."
-    }
-  ]
+  "flags": []
 }
