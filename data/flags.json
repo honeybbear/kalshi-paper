@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-23T13:01:54Z",
+  "generated_at_utc": "2026-11-24T00:44:21Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,5 +32,62 @@
       "open_windows": 1
     }
   },
-  "flags": []
+  "flags": [
+    {
+      "ticker": "KXETH15M-26NOV231945-45",
+      "series": "KXETH15M",
+      "coin": "ETH",
+      "observed_at_utc": "2026-11-24T00:44:21Z",
+      "seconds_remaining": 38,
+      "target_price": 1708.82,
+      "spot_ref": 1709.41,
+      "market_mid_cents": 99.7,
+      "model_fair_cents": 77.6,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 22.1,
+      "observation": "Market mid differs from model by 22.1c in the final 3 minutes. Detection only."
+    },
+    {
+      "ticker": "KXSOL15M-26NOV231945-45",
+      "series": "KXSOL15M",
+      "coin": "SOL",
+      "observed_at_utc": "2026-11-24T00:44:21Z",
+      "seconds_remaining": 38,
+      "target_price": 72.0592,
+      "spot_ref": 72.09,
+      "market_mid_cents": 97.0,
+      "model_fair_cents": 77.0,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 20.0,
+      "observation": "Market mid differs from model by 20.0c in the final 3 minutes. Detection only."
+    },
+    {
+      "ticker": "KXXRP15M-26NOV231945-45",
+      "series": "KXXRP15M",
+      "coin": "XRP",
+      "observed_at_utc": "2026-11-24T00:44:21Z",
+      "seconds_remaining": 38,
+      "target_price": 0.9435,
+      "spot_ref": 0.9427,
+      "market_mid_cents": 62.5,
+      "model_fair_cents": 12.0,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 50.5,
+      "observation": "Market mid differs from model by 50.5c in the final 3 minutes. Detection only."
+    },
+    {
+      "ticker": "KXBNB15M-26NOV231945-45",
+      "series": "KXBNB15M",
+      "coin": "BNB",
+      "observed_at_utc": "2026-11-24T00:44:21Z",
+      "seconds_remaining": 38,
+      "target_price": 557.3,
+      "spot_ref": 557.16,
+      "market_mid_cents": 99.4,
+      "model_fair_cents": 32.6,
+      "type": "final_minutes_dislocation",
+      "dislocation_cents": 66.8,
+      "observation": "Market mid differs from model by 66.8c in the final 3 minutes. Detection only."
+    }
+  ]
 }
