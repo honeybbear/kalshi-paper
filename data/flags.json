@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-11-25T22:44:20Z",
+  "generated_at_utc": "2026-11-26T04:27:40Z",
   "source": "Kalshi public trade API (no auth), Coinbase Exchange spot (model input)",
   "model_note": "Fair-value model P(up)=Phi(ln(S/target)/(sigma*sqrt(tau))), zero drift; sigma frozen from Oct-2026 research. That model LOST money in testing (270 trades, -$1.44, t=-0.21). Shown for observation only, not a recommendation.",
   "detection_note": "Flags are observations only. The underlying model failed its pre-registered profitability test; flags are not recommendations and must not be presented as an edge.",
@@ -32,34 +32,5 @@
       "open_windows": 1
     }
   },
-  "flags": [
-    {
-      "ticker": "KXSOL15M-26NOV251745-45",
-      "series": "KXSOL15M",
-      "coin": "SOL",
-      "observed_at_utc": "2026-11-25T22:44:20Z",
-      "seconds_remaining": 39,
-      "target_price": 70.3343,
-      "spot_ref": 70.37,
-      "market_mid_cents": 98.3,
-      "model_fair_cents": 80.7,
-      "type": "final_minutes_dislocation",
-      "dislocation_cents": 17.6,
-      "observation": "Market mid differs from model by 17.6c in the final 3 minutes. Detection only."
-    },
-    {
-      "ticker": "KXBNB15M-26NOV251745-45",
-      "series": "KXBNB15M",
-      "coin": "BNB",
-      "observed_at_utc": "2026-11-25T22:44:20Z",
-      "seconds_remaining": 39,
-      "target_price": 551.46,
-      "spot_ref": 551.63,
-      "market_mid_cents": 100.0,
-      "model_fair_cents": 70.7,
-      "type": "final_minutes_dislocation",
-      "dislocation_cents": 29.2,
-      "observation": "Market mid differs from model by 29.2c in the final 3 minutes. Detection only."
-    }
-  ]
+  "flags": []
 }
